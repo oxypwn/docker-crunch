@@ -9,7 +9,7 @@ p1() {
 		crunch 10 10  ABCDEFGHIJKLMNOPQRSTUVZ0123456789 -o START -b 1gb -z bzip2 -r
 	else
 		crunch 10 10  ABCDEFGHIJKLMNOPQRSTUVZ0123456789 -o START -b 1gb -z bzip2
-    fi
+	fi
 }
 
 "$@"
