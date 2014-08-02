@@ -14,7 +14,8 @@ RUN git clone git://git.code.sf.net/p/crunch-wordlist/code crunch && \
     make && \
     make install
 
+ADD crunch.sh /
 VOLUME /data
 WORKDIR /data
 
-CMD ["/usr/bin/crunch"]
+ENTRYPOINT ["/crunch.sh"]
